@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Kindle - Codetribe Bookstore</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+    <a href="index.html" class="float">
+     <i class="fa fa-plus my-float"></i>
+     </a>
+
+<img class="photo" src="assets/amazonlogs.png">
+
+       <div class="form">
+
+
+    <form method="post" action="" class="register-form">
+      <input type="text" minlength="2" id="name" name="Name" placeholder="Name">
+      <input type="text" minlength="2" id="surname" name="Surname" placeholder="Surname">
+      <input type="email" id="email" name="Email" placeholder="Email">
+      <input type="tel" id="phoneNumber" maxlength="10" minlength="10" name="PhoneNumber" placeholder="eg. 0712345678" pattern="[0]{1}[6-8]{1}[0-9]{8}">
+      <input type="password" minlength="4" id="password" name="Password" placeholder="Password">
+      <input type="password" minlength="4" id="cPassword" name="Password" placeholder="Confirm Password">
+      <input type="file" id="img" name="img"  accept="image/*" class="chooseFile">
+      <button id="submitBtn" onclick="createUser()">create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+
+    <form  method="post" action="" class="login-form">
+      <input type="email" id="userEmail" name="userEmail" placeholder="Email">
+      <input type="password" minlength="2" id="userPassword"  name="userPassword" placeholder="Password">
+      <button id="submitBtn" onclick="logUser()" >login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+
+<div>
+
+    </body>
+
+    <script src="login.js"></script>
+</html>
